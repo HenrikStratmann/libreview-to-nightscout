@@ -17,7 +17,7 @@ Make sure you have Node.js v13.11.0 installed.
  
  2. Now we transform the data into a minimal format usable by NightScout and other tools. You must set your timezone through the `TZ` variable, and specify the path to the CSV with `DATA_CSV`. 
  
-   `TZ=Australia/Brisbane DATA_CSV=../data/DATA_FILENAME.csv node scripts/parse-librelink.js > data/libreview-parsed.json`
+   `TZ=Europe/Berlin DATA_CSV=../data/DATA_FILENAME.csv UNIT=mg/dL node scripts/parse-librelink.js > data/libreview-parsed.json`
  
  3. Now we can upload the data. Specify your nightscout endpoint and API token (eg. rig-8abfe66c7). You will also have to specify the date from which you want data uploaded, as I'm not quite sure how/if Nightscout deduplicates data entries. Go to line 7 of `upload-to-nightscout.js`, and modify the `from` variable, which is a Unix timestamp. Then you can run:
 
