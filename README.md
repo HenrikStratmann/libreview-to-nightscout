@@ -39,7 +39,5 @@ Make sure you have Node.js v13.11.0 installed.
     ...
     ```
 
-## Bugs
 
- - I've used this for LibreView AU. It assumes the mmol/L standard for BGL's, so it won't work for mg/dl out-of-the-box.
 
